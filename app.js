@@ -17,8 +17,8 @@ const topHelper = document.querySelector('.top-helper');
 const headerRect = header.getBoundingClientRect();
 
 const newFunction = () => {
-    if (window.scrollY === headerRect.bottom) {
-        navigation.classList.toggle('navigation-static');
+    if (window.scrollY === headerRect.bottom || window.scrollY >= headerRect.bottom) {
+        navigation.classList.add('navigation-static');
         navigation.classList.remove('navigation-slide-out');
         console.log('tak');
     } else {

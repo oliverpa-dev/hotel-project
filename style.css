@@ -284,6 +284,77 @@ body {
     margin-bottom: 1rem;
 }
 
-
-
 /* SECTION ABOUTUS - END */
+
+/* SECTION OFFERS START */
+
+.section-offers {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, rgba(0, 150, 199, .5), rgba(0, 180, 216, .5));
+    background-size: cover;
+    background-position: top;
+}
+
+.heading-section-offers {
+    margin-top: -10rem;
+    margin-bottom: 10rem;
+}
+
+.heading-section-offers h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.heading-section-offers div {
+    border-bottom: 5px #ffff00 solid;
+}
+
+.offers {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+}
+
+.offers-4 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.offers-3 {
+    text-align: center;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 20rem;
+    height: 10rem;
+}
+
+.offer-card i {
+    color: #ffff00;
+    margin-bottom: 1rem;
+}
+
+.offer-card h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* SECTION OFFERS END */
