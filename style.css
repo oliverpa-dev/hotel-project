@@ -1,0 +1,225 @@
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+/* SECTION HEADER - START */
+.section-header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(to right bottom, rgba(0, 150, 199, .5), rgba(0, 180, 216, .5));
+    background-size: cover;
+    background-position: top;
+    /* background-color: orangered; */
+}
+
+.navigation {
+    min-height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: blue; */
+    animation: navigation-slide ease-in-out .8s;
+}
+
+.navigation-logo {
+    width: 15%;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.navigation-list .navigation-list_item {
+    list-style: none;
+    cursor: pointer;
+}
+
+.navigation-list_item-a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navigation-list_item-a:hover {
+    color: #ffff00;
+}
+
+.navigation-list_item-a span {
+    color: #ffff00
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+    overflow: hidden;
+}
+
+.bg-video_content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-information_h {
+    color: #ffff00;
+    margin-top: -10rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    overflow: hidden;
+    animation: header_h_slide .7s ease-in-out;
+}
+
+.header-information_p {
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    animation: header_p_slide .7s ease-in-out;
+    overflow: hidden;
+}
+
+.header-information_underline {
+    border-bottom: 2px #ffff00 solid;
+    animation: border_bottom .7s ease-in-out;
+}
+
+.body-hehe {
+    background-color: black;
+}
+
+@keyframes navigation-slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes header_h_slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.section-aboutus {
+    height: 100vh;
+}
+
+/* position static of navigation */
+.navigation-static {
+    width: 100%;
+    position: fixed;
+    background-image: linear-gradient(to right bottom, rgba(0, 150, 199, .5), rgba(0, 180, 216, .5));
+    animation: navigation-static-appear ease-in-out .5s;
+}
+
+.navigation-slide-out {
+    animation: navigation-slide-out ease-in-out .5s;
+}
+
+@keyframes navigation-slide-out {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+}
+
+@keyframes navigation-static-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TOP HELPER */
+.top-helper {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    background-color: #ffff00;
+    text-align: center;
+    padding: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+@keyframes header_p_slide {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes border_bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SECTION HEADER - END */
