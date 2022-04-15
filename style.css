@@ -146,10 +146,6 @@ body {
     }
 }
 
-.section-aboutus {
-    height: 100vh;
-}
-
 /* position static of navigation */
 .navigation-static {
     width: 100%;
@@ -223,3 +219,71 @@ body {
 }
 
 /* SECTION HEADER - END */
+
+/* SECTION ABOUTUS - START */
+.section-aboutus {
+    height: 100vh;
+    margin: auto 10%;
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-aboutus-img {
+    width: 25%;
+    box-shadow: 0px 0px 1px .1px #000000;
+}
+
+.section-aboutus-img:hover {
+    transform: scale(1.1);
+    transition: all .1s ease-in-out;
+    box-shadow: 0px 0px 5px .1px #000000;
+}
+
+.section-aboutus_text {
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.heading-aboutus h1 {
+    margin-bottom: .2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.heading-aboutus div {
+    margin-bottom: 1rem;
+}
+
+.border-about-us {
+    border-bottom: #ffff00 5px solid;
+    width: 12rem;
+}
+
+.border-about-us-p {
+    border-bottom: #ffff00 3px solid;
+    width: 30rem;
+}
+
+.paragraph-about-us p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 1.4rem;
+}
+
+.paragraph-about-us p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.paragraph-about-us p:last-child {
+    margin-bottom: 1rem;
+}
+
+
+
+/* SECTION ABOUTUS - END */
