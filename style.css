@@ -400,8 +400,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30rem;
-    height: 30rem;
+    /* padding: 10rem 5rem; */
     gap: 3rem;
     background-color: #ffffff;
     box-shadow: 0px 0px 2px -1px rgba(66, 68, 90, 1);
@@ -434,3 +433,74 @@ body {
 }
 
 /* SECTION PRICE END */
+
+/* SECTION TESTIMONIALS - START */
+
+.section-testimonials {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.section-testionials_heading h1 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.testimonials-border {
+    border-bottom: #ffff00 5px solid;
+}
+
+.testimonial-bottom {
+    display: flex;
+    gap: 5rem;
+}
+
+/* SECTION TESTIMONIALS - END */
+
+/* SECTION CONTACT - START */
+.section-contact {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 150, 199, .5), rgba(0, 180, 216, .5));
+}
+
+.section-contact_content {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-contact_content-heading {}
+
+.section-contanct_content-info {
+    background-color: #eee;
+    padding: 15rem;
+}
+
+.info-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+}
+
+.info-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+}
+
+.info-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+}
+
+/* SECTION CONTACT - END */
