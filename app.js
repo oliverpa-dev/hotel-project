@@ -34,3 +34,9 @@ window.addEventListener('scroll', newFunction);
 topHelper.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// Getting the date for the footer
+const footerDate = document.querySelector('.date');
+const date = new Date().getFullYear();
+footerDate.innerHTML = date;
+console.log(date);
