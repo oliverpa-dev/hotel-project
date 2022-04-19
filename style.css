@@ -475,11 +475,32 @@ body {
     align-items: center;
 }
 
-.section-contact_content-heading {}
+.section-contact_content-heading {
+    text-align: center;
+}
+
+.section-contact_content-heading h1 {
+    text-transform: uppercase;
+    margin-top: -10rem;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.section-contact_content-heading div {
+    border-bottom: #ffff00 5px solid;
+}
 
 .section-contanct_content-info {
+    border-radius: 3px;
     background-color: #eee;
-    padding: 15rem;
+    height: 30rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+    box-shadow: 0px 0px 2px -1px rgba(66, 68, 90, 1);
 }
 
 .info-1 {
@@ -487,6 +508,17 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 5rem;
+    padding-left: 10rem;
+}
+
+.info-1 h3 {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.info-1 p {
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .info-2 {
@@ -494,6 +526,17 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 5rem;
+    padding-left: 10rem;
+}
+
+.info-2 h3 {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.info-2 p {
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .info-3 {
@@ -501,6 +544,23 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 5rem;
+    padding-left: 10rem;
+}
+
+.info-3 h3 {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.info-3 p {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.section-contanct_content-info:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out .3s;
+    box-shadow: 0px 0px 5px 0px #000000;
 }
 
 /* SECTION CONTACT - END */
