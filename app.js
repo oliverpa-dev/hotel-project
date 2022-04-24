@@ -9,6 +9,7 @@ const footerDate = document.querySelector('.date');
 // Getting the position of the header
 const headerRect = header.getBoundingClientRect();
 
+// function for creating an animation for the navbar
 const animatingNavbar = () => {
 	// if the position of window while scrolling equals to the position of the bottom part of header
 	// and the position of window while scrolling is bigger or equal to the headerbottom - 5px
@@ -23,6 +24,11 @@ const animatingNavbar = () => {
 		// remove class that makes the navigation static
 		navigation.classList.remove('navigation-static');
 	}
+};
+
+// function for creating an animation for the header
+const animationHeader = () => {
+
 };
 
 // calling the function for adding and removing extra classes while scrolling down (Y-axis)
