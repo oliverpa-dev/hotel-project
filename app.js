@@ -17,22 +17,20 @@ const topHelper = document.querySelector('.top-helper');
 const headerRect = header.getBoundingClientRect();
 
 const newFunction = () => {
-    if (window.scrollY === headerRect.bottom || window.scrollY >= headerRect.bottom) {
-        navigation.classList.add('navigation-static');
-        navigation.classList.remove('navigation-slide-out');
-        console.log('tak');
-    } else {
-        navigation.classList.add('navigation-slide-out');
-        navigation.classList.remove('navigation-static');
-    }
-    
+	if (window.scrollY === headerRect.bottom || window.scrollY >= headerRect.bottom - 5) {
+		navigation.classList.add('navigation-static');
+		navigation.classList.remove('navigation-slide-out');
+		console.log('tak');
+	} else {
+		navigation.classList.add('navigation-slide-out');
+		navigation.classList.remove('navigation-static');
+	}
 };
 
 window.addEventListener('scroll', newFunction);
 
-
 topHelper.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+	window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 // Getting the date for the footer
