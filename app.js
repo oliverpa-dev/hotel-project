@@ -28,7 +28,7 @@ const animatingNavbar = () => {
 
 // function for creating an animation for the header
 const animationHeader = () => {
-
+	
 };
 
 // calling the function for adding and removing extra classes while scrolling down (Y-axis)
