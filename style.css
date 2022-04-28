@@ -371,7 +371,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.1), rgba(214, 214, 214, 0.1)), url(./img/price-offer.jpg);
+    background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.4), rgba(214, 214, 214, 0.9)), url(./img/price-offer.jpg);
     align-items: center;
     background-size: cover;
     background-position: top;
@@ -395,6 +395,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    padding: 5rem 20rem;
 }
 
 .card {
@@ -415,6 +416,10 @@ body {
     height: 30rem;
     background-color: #fff;
     padding: 5rem 2rem; 
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 10px -5px rgba(66, 68, 90, 1);
+    transition: all .2s ease-in-out;
 }
 
 .card-content h3 {
@@ -429,52 +434,20 @@ body {
     font-weight: 700;
 }
 
-
-/*
-.card-prices {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10rem;
-    width: 100%;
+.card-content:hover {
+    transform: scale(1.05);
 }
 
-.card-price {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10rem 5rem;
-    gap: 3rem;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 2px -1px rgba(66, 68, 90, 1);
-    border-radius: 5px;
+.card-animated {
+    background-color: #ffff00;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 10px 0px rgba(66, 68, 90, 1);
+    transition: all .2s ease-in-out;
 }
 
-.card-price h2 {
-    margin-top: -4rem;
-    font-size: 2.5rem;
-    border-bottom: 5px #ffff00 solid;
+.card-animated:hover {
+    transform: scale(1.12);
 }
-
-.card-price h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    border-bottom: 5px #ffff00 solid;
-}
-
-.card-price p {
-    width: 28rem;
-    font-size: 1.3rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.card-price:hover {
-    transform: scale(1.1);
-    transition: all .3s ease-in-out;
-    box-shadow: 0px 0px 10px -2px rgba(66, 68, 90, 1);
-} */
 
 /* SECTION PRICE END */
 
