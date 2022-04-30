@@ -345,14 +345,16 @@ body {
 .offer-card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
     width: 20rem;
     height: 10rem;
 }
-
-.offer-card i {
-    color: #ffff00;
-    margin-bottom: 1rem;
+.offer-card img {
+    width: 20%;
+    background-color: #ffff00;
+    border-radius: 50%;
 }
 
 .offer-card h2 {

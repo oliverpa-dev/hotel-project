@@ -2,12 +2,25 @@
 
 // Getting all the elements from the html
 const navigation = document.querySelector('.navigation');
-const header = document.querySelector('.section-header');
 const topHelper = document.querySelector('.top-helper');
 const footerDate = document.querySelector('.date');
 
-// Getting the position of the header
-const headerRect = header.getBoundingClientRect();
+// Getting all the sections
+const header = document.querySelector('.section-header');
+const aboutUs = document.querySelector('.section-aboutus');
+const offers = document.querySelector('.section-offers');
+const price = document.querySelector('.section-price');
+const contact = document.querySelector('.section-contact');
+
+
+// Getting the position of each section
+const headerPosition = header.getBoundingClientRect();
+const aboutUsPosition = aboutus.getBoundingClientRect();
+const offersPosition = offers.getBoundingClientRect();
+const pricePosition = price.getBoundingClientRect();
+const contactPosition = contact.getBoundingClientRect();
+
+// Functions for manipulation of the  navigation background color
 
 // function for creating an animation for the navbar
 const animatingNavbar = () => {
@@ -24,11 +37,6 @@ const animatingNavbar = () => {
 		// remove class that makes the navigation static
 		navigation.classList.remove('navigation-static');
 	}
-};
-
-// function for creating an animation for the header
-const animationHeader = () => {
-	
 };
 
 // calling the function for adding and removing extra classes while scrolling down (Y-axis)
