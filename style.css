@@ -150,10 +150,18 @@ body {
 }
 
 /* position static of navigation */
-.navigation-static {
+.navigation-static-blue {
     width: 100%;
     position: fixed;
     background-image: linear-gradient(to right bottom, rgba(0, 150, 199, .5), rgba(0, 180, 216, .5));
+    animation: navigation-static-appear ease-in-out .5s;
+}
+
+.navigation-static-white {
+    width: 100%;
+    position: fixed;
+    /* background-image: linear-gradient(to right bottom, rgba(0, 150, 199, .5), rgba(0, 180, 216, .5)); */
+    background-color: rgba(255,255,255,0.7);
     animation: navigation-static-appear ease-in-out .5s;
 }
 

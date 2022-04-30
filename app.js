@@ -21,26 +21,34 @@ const pricePosition = price.getBoundingClientRect();
 const contactPosition = contact.getBoundingClientRect();
 
 // Functions for manipulation of the  navigation background color
-
-// function for creating an animation for the navbar
-const animatingNavbar = () => {
+// Aboutus section
+const aboutUsAnimation = () => {
 	// if the position of window while scrolling equals to the position of the bottom part of header
 	// and the position of window while scrolling is bigger or equal to the headerbottom - 5px
-	if (window.scrollY === headerRect.bottom || window.scrollY >= headerRect.bottom - 5) {
+	if (window.scrollY === headerPosition.bottom || window.scrollY >= headerPosition.bottom) {
 		// add new class that makes the navigation stay static
-		navigation.classList.add('navigation-static');
-		// remove previous animation
 		navigation.classList.remove('navigation-slide-out');
-	} else {
-		// add new class to the navigation (going back)
-		navigation.classList.add('navigation-slide-out');
-		// remove class that makes the navigation static
-		navigation.classList.remove('navigation-static');
+		// remove previous animation
+		navigation.classList.add('navigation-static-blue');
 	}
 };
 
+// Offers section
+const offersAnimation = () => {
+	if (window.scrollY === aboutUsPosition.bottom || window.scrollY >= aboutUsPosition.bottom) {
+		navigation.classList.remove('navigation-static-blue')
+		navigation.classList.add('navigation-static-white');
+	}
+}
+
+// function for creating an animation for the navbar
+const animation = () => {
+	aboutUsAnimation();
+	offersAnimation();
+};
+
 // calling the function for adding and removing extra classes while scrolling down (Y-axis)
-window.addEventListener('scroll', animatingNavbar);
+window.addEventListener('scroll', animation);
 
 // function for creating a smooth scrolling animation on click
 topHelper.addEventListener('click', () => {
