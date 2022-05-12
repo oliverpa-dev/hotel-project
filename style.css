@@ -362,6 +362,7 @@ body {
     width: 20rem;
     height: 10rem;
 }
+
 .offer-card img {
     width: 20%;
     background-color: #ffff00;
@@ -417,7 +418,7 @@ body {
     align-items: center;
 }
 
-.card h2{
+.card h2 {
     text-transform: uppercase;
     font-size: 2rem;
     border-bottom: #ffff00 3px solid;
@@ -428,7 +429,7 @@ body {
     width: 25rem;
     height: 30rem;
     background-color: #fff;
-    padding: 5rem 2rem; 
+    padding: 5rem 2rem;
     border-radius: 5px;
     -webkit-box-shadow: 0px 0px 10px -5px rgba(66, 68, 90, 1);
     box-shadow: 0px 0px 10px -5px rgba(66, 68, 90, 1);
@@ -642,6 +643,7 @@ footer span {
         gap: 3rem;
     }
 }
+
 /* MEDIA QUERIES - 1200PX - END */
 
 
@@ -661,22 +663,76 @@ footer span {
     }
 
     .burger-menu {
-        display: block;
+        width: 4rem;
+        height: 2rem;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
     }
 
-    .burger-menu::before {
-        content: '123';
+    .burger-menu_first {
+        position: absolute;
+        top: 0%;
+        width: 3rem;
+        height: .3rem;
+        background-color: #ffff00;
+        border-radius: 3px;
+        box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 1);
     }
 
-    .burger-menu::after {
-        content: '123';
+    .burger-menu_second {
+        position: absolute;
+        top: 50%;
+        width: 3rem;
+        height: .3rem;
+        background-color: #ffff00;
+        border-radius: 3px;
+        box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 1);
     }
+
+    .burger-menu_third {
+        position: absolute;
+        top: 100%;
+        width: 3rem;
+        height: .3rem;
+        background-color: #ffff00;
+        border-radius: 3px;
+        box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 1);
+    }
+
+    .burger-menu_first_animation {
+        transform: rotate(45deg) translate(50%, -50%);
+        transition: transform .4s ease-out;
+    }
+
+    .burger-menu_second_animation {
+        animation: mediumSlide .5s ease-out forwards;
+    }
+
+    .burger-menu_third_animation {
+        transform: rotate(-45deg) translate(50%);
+        transition: transform .4s ease-out;
+        box-shadow: none;
+    }
+
+    @keyframes mediumSlide {
+        0% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+    }
+
 }
+
 /* MEDIA QUERIES - 768PX - END */
 
 
 /* MEDIA QUERIES - 320px - START */
-@media only screen and (max-width: 320px) {
-    
-}
+@media only screen and (max-width: 320px) {}
+
 /* MEDIA QUERIES - 320px - END */
